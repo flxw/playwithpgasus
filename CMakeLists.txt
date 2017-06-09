@@ -8,7 +8,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 include_directories(../pgasus/include)
-include_directories(../pgasus/src)
+include_directories(../pgasus/src) # should not actually be needed!
 link_directories(../pgasus/bin)
 add_executable(tasking_test tasking_test.cpp)
 
