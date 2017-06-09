@@ -19,7 +19,8 @@ ostream& operator<<(ostream &os, const vector<numa::CpuId> &cl) {
 
 void printTaskNode() {
 	cout << "Task running on node PHY" << numa::Node::curr().physicalId()
-			 << " LOG" << numa::Node::curr().logicalId() << endl;
+			 << " LOG" << numa::Node::curr().logicalId()
+			 << " CPU" << (int)numa::Node::currCpuid() << endl;
 }
 
 int main (int argc, char const* argv[]) {
